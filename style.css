@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #0d0d0d;
+  color: #fff;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: #111;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  color: #ff4da6;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #ff4da6;
+  border-bottom: 2px solid #ff4da6;
+}
+
+/* Home */
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 60px;
+}
+
+.intro h2 {
+  color: #ff80bf;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.intro h1 {
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+.intro h1 span {
+  color: #ff4da6;
+}
+
+.socials a img {
+  width: 24px;
+  filter: invert(75%) sepia(30%) saturate(1000%) hue-rotate(300deg);
+  margin-right: 15px;
+  transition: 0.3s;
+}
+
+.socials a img:hover {
+  transform: scale(1.2);
+}
+
+.photo img {
+  width: 250px;
+  border-radius: 50%;
+  border: 4px solid #ff4da6;
+}
+
+/* Service */
+#service {
+  text-align: center;
+  padding: 80px 60px;
+  background: #111;
+}
+
+#service h2 {
+  color: #ff4da6;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  border: 1px solid transparent;
+}
+
+.card:hover {
+  border: 1px solid #ff4da6;
+  transform: translateY(-5px);
+}
+
+/* Biography */
+#biography {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.bio-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.bio-container img {
+  width: 200px;
+  border-radius: 20px;
+  border: 3px solid #ff4da6;
+}
+
+.bio-text p {
+  margin: 8px 0;
+  text-align: left;
+}
+
+/* Skills */
+#skills {
+  background: #111;
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.skill {
+  margin: 20px auto;
+  max-width: 400px;
+  text-align: left;
+}
+
+.bar {
+  background: #333;
+  border-radius: 20px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.bar span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #ff4da6, #ff80bf);
+}
+
+/* Footer */
+footer {
+  background: #0d0d0d;
+  text-align: center;
+  padding: 20px;
+  color: #aaa;
+  font-size: 14px;
+}
