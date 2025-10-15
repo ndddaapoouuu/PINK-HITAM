@@ -1,3 +1,4 @@
+html { scroll-behavior: }
 * {
   margin: 0;
   padding: 0;
@@ -264,4 +265,47 @@ footer {
   border-radius: 50%;
   text-decoration: none;
   font-weight: bold;
+}
+#contact {
+  padding: 80px 60px;
+  background: #111;
+  text-align: center;
+}
+
+#contact h2 {
+  color: #ff4da6;
+  margin-bottom: 30px;
+}
+
+#contact form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contact input,
+#contact textarea {
+  background: #1a1a1a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+#contact button {
+  background: linear-gradient(90deg, #ff4da6, #ff80bf);
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#contact button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #ff80bf, #ff4da6);
 }
